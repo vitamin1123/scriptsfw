@@ -1,12 +1,11 @@
 import xml.etree.ElementTree as ET
 import json
-from collections import deque
+from collections import defaultdict
 
 def parse_process_file(xml_file):
     tree = ET.parse(xml_file)
     root = tree.getroot()
     
-    # 提取流程基本信息
     wf_model = root.find(".//wf_model")
     if wf_model is None:
         raise ValueError("找不到 wf_model 元素")
@@ -17,12 +16,6 @@ def parse_process_file(xml_file):
         "key": wf_model.find("key").text if wf_model.find("key") is not None else "N/A",
     }
     
-    print(f"流程名称: {workflow['name']}")
-    print(f"流程ID: {workflow['id']}")
-    print(f"流程Key: {workflow['key']}")
-    print("\n审批流程节点:")
-    
-    # 提取流程图数据
     resource = root.find(".//wf_resource")
     if resource is None:
         raise ValueError("找不到 wf_resource 元素")
@@ -34,11 +27,10 @@ def parse_process_file(xml_file):
     process_data = json.loads(data.text)
     return workflow, process_data
 
-def parse_process_data(process_data):
+def build_dag(process_data):
     nodes = process_data.get("childShapes", [])
-    flow = {}
-    node_relationships = {}
-    in_degree = {}
+    graph = defaultdict(list)
+    node_info = {}
     
     for node in nodes:
         node_id = node.get("resourceId", "N/A")
@@ -54,62 +46,60 @@ def parse_process_data(process_data):
                 condition_exp = p.get("conditionExpression", "无条件")
                 participant_details.append(f"{participant_info} (条件: {condition_exp})")
         
-        flow[node_id] = {
-            "id": node_id,
+        node_info[node_id] = {
             "name": node_name,
             "type": node_type,
             "participant": participant_details,
             "condition": condition
         }
-        node_relationships[node_id] = []
-        in_degree[node_id] = 0
         
-    # 记录连接关系并计算入度
     for node in nodes:
         node_id = node.get("resourceId")
         for outgoing in node.get("outgoing", []):
             target = outgoing.get("resourceId")
-            if target and target in flow:
-                node_relationships[node_id].append(target)
-                in_degree[target] += 1
+            if target in node_info:
+                graph[node_id].append(target)
     
-    return flow, node_relationships, in_degree
+    return graph, node_info
 
-def get_ordered_nodes(flow, node_relationships, in_degree):
-    queue = deque([node for node in flow if in_degree[node] == 0])
-    ordered_nodes = []
+def dfs(graph, node_info, path, current_node, all_paths):
+    path.append(current_node)
     
-    while queue:
-        node = queue.popleft()
-        ordered_nodes.append(flow[node])
-        for neighbor in node_relationships[node]:
-            in_degree[neighbor] -= 1
-            if in_degree[neighbor] == 0:
-                queue.append(neighbor)
+    if not graph[current_node]:  # 终点节点
+        all_paths.append(list(path))
+    else:
+        for neighbor in graph[current_node]:
+            dfs(graph, node_info, path, neighbor, all_paths)
     
-    if len(ordered_nodes) != len(flow):
-        print("警告: 可能存在循环依赖，部分节点未被解析！")
+    path.pop()
+
+def find_all_paths(graph, node_info):
+    start_nodes = [node for node in node_info if all(node not in targets for targets in graph.values())]
+    all_paths = []
     
-    return ordered_nodes
+    for start in start_nodes:
+        dfs(graph, node_info, [], start, all_paths)
+    
+    return all_paths
 
 def main(xml_file):
     workflow, process_data = parse_process_file(xml_file)
-    flow, node_relationships, in_degree = parse_process_data(process_data)
-    ordered_nodes = get_ordered_nodes(flow, node_relationships, in_degree)
+    graph, node_info = build_dag(process_data)
+    all_paths = find_all_paths(graph, node_info)
     
-    print("\n按顺序解析的节点:")
-    for node in ordered_nodes:
-        print(f"- {node['name']} (类型: {node['type']}, 编码: {node['id']})")
-        if node["participant"]:
-            print(f"  参与人: {', '.join(node['participant'])}")
-        print(f"  条件: {node['condition']}")
-        
-        if node["type"] == "SequenceFlow":
-            sources = [src for src, targets in node_relationships.items() if node["id"] in targets]
-            targets = node_relationships[node["id"]]
-            source_names = [flow[src]["name"] for src in sources]
-            target_names = [flow[tgt]["name"] for tgt in targets]
-            print(f"  连接: {', '.join(source_names)} -> {', '.join(target_names)}")
+    print(f"流程名称: {workflow['name']}")
+    print(f"流程ID: {workflow['id']}")
+    print(f"流程Key: {workflow['key']}")
+    print("\n所有可能的路径:")
+    
+    for idx, path in enumerate(all_paths, 1):
+        print(f"路径 {idx}:")
+        for node in path:
+            info = node_info[node]
+            print(f"  - {info['name']} (类型: {info['type']}, 条件: {info['condition']})")
+            if info["participant"]:
+                print(f"    参与人: {', '.join(info['participant'])}")
+        print()
     
 if __name__ == "__main__":
     xml_file = r"C:\Users\xyy\Downloads\Proc_er_dailyreimbursebill_audit_8 (1)\Proc_er_dailyreimbursebill_audit_8.process"
