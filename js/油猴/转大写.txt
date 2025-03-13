@@ -15,7 +15,8 @@
         // 同时检查两个目标div
         const targets = [
             document.getElementById('advconsummarypanelap'),
-            document.getElementById('advconsummarypanelap1')
+            document.getElementById('advconsummarypanelap1'),
+            document.getElementById('advconsummarypanelap2')
         ].filter(Boolean);
 
         if (targets.length > 0) {
