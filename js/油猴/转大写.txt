@@ -1,0 +1,106 @@
+// ==UserScript==
+// @name         动态监听并显示数字大写
+// @namespace    http://tampermonkey.net/
+// @version      0.85
+// @description  同时监听advconsummarypanelap和advconsummarypanelap1
+// @author       夏一扬
+// @match        http://10.0.1.55/*
+// @grant        none
+// ==/UserScript==
+
+(function () {
+    'use strict';
+
+    const observer = new MutationObserver(function (mutations) {
+        // 同时检查两个目标div
+        const targets = [
+            document.getElementById('advconsummarypanelap'),
+            document.getElementById('advconsummarypanelap1')
+        ].filter(Boolean);
+
+        if (targets.length > 0) {
+            // 停止主文档监听
+            //observer.disconnect();
+
+            // 为每个找到的div创建独立监听
+            targets.forEach(targetDiv => {
+                // 标记已监听防止重复
+                if (targetDiv.dataset.observed) return;
+                targetDiv.dataset.observed = true;
+
+                const targetObserver = new MutationObserver(function () {
+                    const spans = Array.from(targetDiv.querySelectorAll(
+                        'div[style*="color: rgb(252, 133, 85)"] span, ' +
+                        'div[style*="color:#fc8555"] span'
+                    )).filter(span => span.textContent.trim() !== '');
+                    // 使用相对查询避免依赖绝对路径
+                    //const lastSpan = targetDiv.querySelector(
+                    //    'div[style*="color: rgb(252, 133, 85)"] span, ' +
+                    //    'div[style*="color:#fc8555"] span'
+                   // );
+                    const lastSpan = spans.length > 0 ? spans[spans.length - 1] : null;
+                    if (lastSpan) {
+                        const numberText = lastSpan.textContent
+                            .replace(/[^0-9.]/g, '')
+                            .replace(/,/g, '');
+                        const number = parseFloat(numberText);
+                        if (!isNaN(number)) {
+                            const chineseNumber = numberToChinese(numberText);
+                            let displayDiv = targetDiv.querySelector('.chinese-number-display');
+                            if (!displayDiv) {
+                                displayDiv = document.createElement('div');
+                                displayDiv.className = 'chinese-number-display';
+                                // 添加样式
+                                displayDiv.style.cssText = `
+                                    color: #fc8555;
+                                    font-weight: bold;
+                                    margin-top: 5px;
+                                `;
+                                targetDiv.appendChild(displayDiv);
+                            }
+                            displayDiv.textContent = chineseNumber;
+                        }
+                    }
+                });
+
+                // 监听目标div的所有变化
+                targetObserver.observe(targetDiv, {
+                    childList: true,
+                    subtree: true,
+                    characterData: true
+                });
+            });
+        }
+    });
+
+    observer.observe(document, {
+        childList: true,
+        subtree: true
+    });
+
+    // 数字转汉字大写的函数（支持小数）
+    function numberToChinese(n) {
+
+    if (!/^(0|[1-9]\d*)(\.\d+)?$/.test(n)){
+        return "数据非法"; //判断数据是否大于0
+    }
+
+    var unit = "千百拾亿千百拾万千百拾元角分", str = "";
+    n += "00";
+
+    var indexpoint = n.indexOf('.'); // 如果是小数，截取小数点前面的位数
+
+    if (indexpoint >= 0){
+
+        n = n.substring(0, indexpoint) + n.substr(indexpoint+1, 2); // 若为小数，截取需要使用的unit单位
+    }
+
+    unit = unit.substr(unit.length - n.length); // 若为整数，截取需要使用的unit单位
+    for (var i=0; i < n.length; i++){
+        str += "零壹贰叁肆伍陆柒捌玖".charAt(n.charAt(i)) + unit.charAt(i); //遍历转化为大写的数字
+    }
+
+    return str.replace(/零(千|百|拾|角)/g, "零").replace(/(零)+/g, "零").replace(/零(万|亿|元)/g, "$1").replace(/(亿)万|壹(拾)/g, "$1$2").replace(/^元零?|零分/g, "").replace(/元$/g, "元整"); // 替换掉数字里面的零字符，得到结果
+
+}
+})();

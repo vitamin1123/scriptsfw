@@ -1,0 +1,176 @@
+[2025-03-11 11:37:41.506] [debug] [WCF] [log.hpp::68::Log::InitLogger] InitLogger with debug level
+[2025-03-11 11:37:41.506] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.17，当前版本: 3.9.12.17
+[2025-03-11 11:37:41.506] [debug] [WCF] [rpc_server.cpp::60::RpcServer::RpcServer] RpcServer 构造: 端口 10086
+[2025-03-11 11:37:41.506] [info] [WCF] [rpc_server.cpp::94::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2025-03-11 11:37:41.508] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2025-03-11 11:37:41.513] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x01[Functions_FUNC_IS_LOGIN] length: 2
+[2025-03-11 11:37:41.513] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 11:37:41.514] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x10[Functions_FUNC_GET_SELF_WXID] length: 2
+[2025-03-11 11:37:41.514] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 11:37:41.514] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x12[Functions_FUNC_GET_CONTACTS] length: 2
+[2025-03-11 11:37:41.537] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 98135
+[2025-03-11 11:37:41.903] [debug] [WCF] [spy.cpp::40::Spy::Cleanup] CleanupSpy
+[2025-03-11 11:37:41.903] [error] [WCF] [rpc_server.cpp::333::RpcServer::run_rpc_server] cmdSock-nng_recv error: Object closed
+[2025-03-11 11:37:41.903] [debug] [WCF] [rpc_server.cpp::361::RpcServer::run_rpc_server] Leave RunRpcServer
+[2025-03-11 11:37:41.907] [debug] [WCF] [rpc_server.cpp::113::RpcServer::stop] 等待命令线程关闭
+[2025-03-11 11:37:41.907] [debug] [WCF] [rpc_server.cpp::116::RpcServer::stop] 命令线程已经关闭
+[2025-03-11 11:37:41.907] [debug] [WCF] [rpc_server.cpp::122::RpcServer::stop] 消息线程已经关闭
+[2025-03-11 11:37:41.907] [info] [WCF] [rpc_server.cpp::123::RpcServer::stop] RPC 服务已停止
+[2025-03-11 11:37:41.907] [warning] [WCF] [rpc_server.cpp::101::RpcServer::stop] RPC 服务未运行
+[2025-03-11 11:37:41.907] [debug] [WCF] [rpc_server.cpp::66::RpcServer::~RpcServer] RpcServer 被析构，释放所有资源
+[2025-03-11 11:38:06.824] [debug] [WCF] [log.hpp::68::Log::InitLogger] InitLogger with debug level
+[2025-03-11 11:38:06.825] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.17，当前版本: 3.9.12.17
+[2025-03-11 11:38:06.825] [debug] [WCF] [rpc_server.cpp::60::RpcServer::RpcServer] RpcServer 构造: 端口 10086
+[2025-03-11 11:38:06.825] [info] [WCF] [rpc_server.cpp::94::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2025-03-11 11:38:06.828] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2025-03-11 11:38:06.832] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x01[Functions_FUNC_IS_LOGIN] length: 2
+[2025-03-11 11:38:06.832] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 11:38:06.833] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x10[Functions_FUNC_GET_SELF_WXID] length: 2
+[2025-03-11 11:38:06.833] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 11:38:06.835] [debug] [WCF] [spy.cpp::40::Spy::Cleanup] CleanupSpy
+[2025-03-11 11:38:06.835] [error] [WCF] [rpc_server.cpp::333::RpcServer::run_rpc_server] cmdSock-nng_recv error: Object closed
+[2025-03-11 11:38:06.835] [debug] [WCF] [rpc_server.cpp::361::RpcServer::run_rpc_server] Leave RunRpcServer
+[2025-03-11 11:38:06.838] [debug] [WCF] [rpc_server.cpp::113::RpcServer::stop] 等待命令线程关闭
+[2025-03-11 11:38:06.838] [debug] [WCF] [rpc_server.cpp::116::RpcServer::stop] 命令线程已经关闭
+[2025-03-11 11:38:06.838] [debug] [WCF] [rpc_server.cpp::122::RpcServer::stop] 消息线程已经关闭
+[2025-03-11 11:38:06.838] [info] [WCF] [rpc_server.cpp::123::RpcServer::stop] RPC 服务已停止
+[2025-03-11 11:38:06.838] [warning] [WCF] [rpc_server.cpp::101::RpcServer::stop] RPC 服务未运行
+[2025-03-11 11:38:06.838] [debug] [WCF] [rpc_server.cpp::66::RpcServer::~RpcServer] RpcServer 被析构，释放所有资源
+[2025-03-11 11:38:20.007] [debug] [WCF] [log.hpp::68::Log::InitLogger] InitLogger with debug level
+[2025-03-11 11:38:20.007] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.17，当前版本: 3.9.12.17
+[2025-03-11 11:38:20.007] [debug] [WCF] [rpc_server.cpp::60::RpcServer::RpcServer] RpcServer 构造: 端口 10086
+[2025-03-11 11:38:20.007] [info] [WCF] [rpc_server.cpp::94::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2025-03-11 11:38:20.009] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2025-03-11 11:38:20.013] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x01[Functions_FUNC_IS_LOGIN] length: 2
+[2025-03-11 11:38:20.013] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 11:38:20.013] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x10[Functions_FUNC_GET_SELF_WXID] length: 2
+[2025-03-11 11:38:20.013] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 11:38:20.015] [debug] [WCF] [spy.cpp::40::Spy::Cleanup] CleanupSpy
+[2025-03-11 11:38:20.016] [error] [WCF] [rpc_server.cpp::333::RpcServer::run_rpc_server] cmdSock-nng_recv error: Object closed
+[2025-03-11 11:38:20.016] [debug] [WCF] [rpc_server.cpp::361::RpcServer::run_rpc_server] Leave RunRpcServer
+[2025-03-11 11:38:20.019] [debug] [WCF] [rpc_server.cpp::113::RpcServer::stop] 等待命令线程关闭
+[2025-03-11 11:38:20.019] [debug] [WCF] [rpc_server.cpp::116::RpcServer::stop] 命令线程已经关闭
+[2025-03-11 11:38:20.019] [debug] [WCF] [rpc_server.cpp::122::RpcServer::stop] 消息线程已经关闭
+[2025-03-11 11:38:20.019] [info] [WCF] [rpc_server.cpp::123::RpcServer::stop] RPC 服务已停止
+[2025-03-11 11:38:20.019] [warning] [WCF] [rpc_server.cpp::101::RpcServer::stop] RPC 服务未运行
+[2025-03-11 11:38:20.019] [debug] [WCF] [rpc_server.cpp::66::RpcServer::~RpcServer] RpcServer 被析构，释放所有资源
+[2025-03-11 11:38:29.446] [debug] [WCF] [log.hpp::68::Log::InitLogger] InitLogger with debug level
+[2025-03-11 11:38:29.446] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.17，当前版本: 3.9.12.17
+[2025-03-11 11:38:29.446] [debug] [WCF] [rpc_server.cpp::60::RpcServer::RpcServer] RpcServer 构造: 端口 10086
+[2025-03-11 11:38:29.446] [info] [WCF] [rpc_server.cpp::94::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2025-03-11 11:38:29.448] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2025-03-11 11:38:29.451] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x01[Functions_FUNC_IS_LOGIN] length: 2
+[2025-03-11 11:38:29.451] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 11:38:29.451] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x10[Functions_FUNC_GET_SELF_WXID] length: 2
+[2025-03-11 11:38:29.451] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 11:38:29.451] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x12[Functions_FUNC_GET_CONTACTS] length: 2
+[2025-03-11 11:38:29.473] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 98135
+[2025-03-11 11:38:29.682] [debug] [WCF] [spy.cpp::40::Spy::Cleanup] CleanupSpy
+[2025-03-11 11:38:29.682] [error] [WCF] [rpc_server.cpp::333::RpcServer::run_rpc_server] cmdSock-nng_recv error: Object closed
+[2025-03-11 11:38:29.682] [debug] [WCF] [rpc_server.cpp::361::RpcServer::run_rpc_server] Leave RunRpcServer
+[2025-03-11 11:38:29.685] [debug] [WCF] [rpc_server.cpp::113::RpcServer::stop] 等待命令线程关闭
+[2025-03-11 11:38:29.685] [debug] [WCF] [rpc_server.cpp::116::RpcServer::stop] 命令线程已经关闭
+[2025-03-11 11:38:29.685] [debug] [WCF] [rpc_server.cpp::122::RpcServer::stop] 消息线程已经关闭
+[2025-03-11 11:38:29.685] [info] [WCF] [rpc_server.cpp::123::RpcServer::stop] RPC 服务已停止
+[2025-03-11 11:38:29.685] [warning] [WCF] [rpc_server.cpp::101::RpcServer::stop] RPC 服务未运行
+[2025-03-11 11:38:29.685] [debug] [WCF] [rpc_server.cpp::66::RpcServer::~RpcServer] RpcServer 被析构，释放所有资源
+[2025-03-11 11:40:03.193] [debug] [WCF] [log.hpp::68::Log::InitLogger] InitLogger with debug level
+[2025-03-11 11:40:03.193] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.17，当前版本: 3.9.12.17
+[2025-03-11 11:40:03.193] [debug] [WCF] [rpc_server.cpp::60::RpcServer::RpcServer] RpcServer 构造: 端口 10086
+[2025-03-11 11:40:03.193] [info] [WCF] [rpc_server.cpp::94::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2025-03-11 11:40:03.194] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2025-03-11 11:40:03.199] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x01[Functions_FUNC_IS_LOGIN] length: 2
+[2025-03-11 11:40:03.199] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 11:40:03.199] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x10[Functions_FUNC_GET_SELF_WXID] length: 2
+[2025-03-11 11:40:03.199] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 11:40:03.199] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x12[Functions_FUNC_GET_CONTACTS] length: 2
+[2025-03-11 11:40:03.221] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 98135
+[2025-03-11 11:40:03.236] [debug] [WCF] [spy.cpp::40::Spy::Cleanup] CleanupSpy
+[2025-03-11 11:40:03.236] [error] [WCF] [rpc_server.cpp::333::RpcServer::run_rpc_server] cmdSock-nng_recv error: Object closed
+[2025-03-11 11:40:03.236] [debug] [WCF] [rpc_server.cpp::361::RpcServer::run_rpc_server] Leave RunRpcServer
+[2025-03-11 11:40:03.240] [debug] [WCF] [rpc_server.cpp::113::RpcServer::stop] 等待命令线程关闭
+[2025-03-11 11:40:03.240] [debug] [WCF] [rpc_server.cpp::116::RpcServer::stop] 命令线程已经关闭
+[2025-03-11 11:40:03.240] [debug] [WCF] [rpc_server.cpp::122::RpcServer::stop] 消息线程已经关闭
+[2025-03-11 11:40:03.240] [info] [WCF] [rpc_server.cpp::123::RpcServer::stop] RPC 服务已停止
+[2025-03-11 11:40:03.240] [warning] [WCF] [rpc_server.cpp::101::RpcServer::stop] RPC 服务未运行
+[2025-03-11 11:40:03.240] [debug] [WCF] [rpc_server.cpp::66::RpcServer::~RpcServer] RpcServer 被析构，释放所有资源
+[2025-03-11 12:32:22.820] [debug] [WCF] [log.hpp::68::Log::InitLogger] InitLogger with debug level
+[2025-03-11 12:32:22.821] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.17，当前版本: 3.9.12.17
+[2025-03-11 12:32:22.821] [debug] [WCF] [rpc_server.cpp::60::RpcServer::RpcServer] RpcServer 构造: 端口 10086
+[2025-03-11 12:32:22.821] [info] [WCF] [rpc_server.cpp::94::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2025-03-11 12:32:22.823] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2025-03-11 12:32:22.826] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x01[Functions_FUNC_IS_LOGIN] length: 2
+[2025-03-11 12:32:22.826] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 12:32:22.827] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x10[Functions_FUNC_GET_SELF_WXID] length: 2
+[2025-03-11 12:32:22.827] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 12:32:22.827] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x12[Functions_FUNC_GET_CONTACTS] length: 2
+[2025-03-11 12:32:22.854] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 98135
+[2025-03-11 12:32:22.870] [debug] [WCF] [spy.cpp::40::Spy::Cleanup] CleanupSpy
+[2025-03-11 12:32:22.870] [error] [WCF] [rpc_server.cpp::333::RpcServer::run_rpc_server] cmdSock-nng_recv error: Object closed
+[2025-03-11 12:32:22.870] [debug] [WCF] [rpc_server.cpp::361::RpcServer::run_rpc_server] Leave RunRpcServer
+[2025-03-11 12:32:22.873] [debug] [WCF] [rpc_server.cpp::113::RpcServer::stop] 等待命令线程关闭
+[2025-03-11 12:32:22.873] [debug] [WCF] [rpc_server.cpp::116::RpcServer::stop] 命令线程已经关闭
+[2025-03-11 12:32:22.873] [debug] [WCF] [rpc_server.cpp::122::RpcServer::stop] 消息线程已经关闭
+[2025-03-11 12:32:22.873] [info] [WCF] [rpc_server.cpp::123::RpcServer::stop] RPC 服务已停止
+[2025-03-11 12:32:22.873] [warning] [WCF] [rpc_server.cpp::101::RpcServer::stop] RPC 服务未运行
+[2025-03-11 12:32:22.873] [debug] [WCF] [rpc_server.cpp::66::RpcServer::~RpcServer] RpcServer 被析构，释放所有资源
+[2025-03-11 12:33:28.234] [debug] [WCF] [log.hpp::68::Log::InitLogger] InitLogger with debug level
+[2025-03-11 12:33:28.234] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.17，当前版本: 3.9.12.17
+[2025-03-11 12:33:28.234] [debug] [WCF] [rpc_server.cpp::60::RpcServer::RpcServer] RpcServer 构造: 端口 10086
+[2025-03-11 12:33:28.234] [info] [WCF] [rpc_server.cpp::94::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2025-03-11 12:33:28.235] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2025-03-11 12:33:28.239] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x01[Functions_FUNC_IS_LOGIN] length: 2
+[2025-03-11 12:33:28.239] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 12:33:28.240] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x10[Functions_FUNC_GET_SELF_WXID] length: 2
+[2025-03-11 12:33:28.240] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 12:33:28.240] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x12[Functions_FUNC_GET_CONTACTS] length: 2
+[2025-03-11 12:33:28.261] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 98135
+[2025-03-11 12:33:28.276] [debug] [WCF] [spy.cpp::40::Spy::Cleanup] CleanupSpy
+[2025-03-11 12:33:28.277] [error] [WCF] [rpc_server.cpp::333::RpcServer::run_rpc_server] cmdSock-nng_recv error: Object closed
+[2025-03-11 12:33:28.277] [debug] [WCF] [rpc_server.cpp::361::RpcServer::run_rpc_server] Leave RunRpcServer
+[2025-03-11 12:33:28.280] [debug] [WCF] [rpc_server.cpp::113::RpcServer::stop] 等待命令线程关闭
+[2025-03-11 12:33:28.281] [debug] [WCF] [rpc_server.cpp::116::RpcServer::stop] 命令线程已经关闭
+[2025-03-11 12:33:28.281] [debug] [WCF] [rpc_server.cpp::122::RpcServer::stop] 消息线程已经关闭
+[2025-03-11 12:33:28.281] [info] [WCF] [rpc_server.cpp::123::RpcServer::stop] RPC 服务已停止
+[2025-03-11 12:33:28.281] [warning] [WCF] [rpc_server.cpp::101::RpcServer::stop] RPC 服务未运行
+[2025-03-11 12:33:28.281] [debug] [WCF] [rpc_server.cpp::66::RpcServer::~RpcServer] RpcServer 被析构，释放所有资源
+[2025-03-11 12:33:52.544] [debug] [WCF] [log.hpp::68::Log::InitLogger] InitLogger with debug level
+[2025-03-11 12:33:52.544] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.17，当前版本: 3.9.12.17
+[2025-03-11 12:33:52.544] [debug] [WCF] [rpc_server.cpp::60::RpcServer::RpcServer] RpcServer 构造: 端口 10086
+[2025-03-11 12:33:52.544] [info] [WCF] [rpc_server.cpp::94::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2025-03-11 12:33:52.546] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2025-03-11 12:33:52.550] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x01[Functions_FUNC_IS_LOGIN] length: 2
+[2025-03-11 12:33:52.550] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 12:33:52.550] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x10[Functions_FUNC_GET_SELF_WXID] length: 2
+[2025-03-11 12:33:52.550] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 12:33:52.551] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x12[Functions_FUNC_GET_CONTACTS] length: 2
+[2025-03-11 12:33:52.572] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 98135
+[2025-03-11 12:33:52.589] [debug] [WCF] [spy.cpp::40::Spy::Cleanup] CleanupSpy
+[2025-03-11 12:33:52.589] [error] [WCF] [rpc_server.cpp::333::RpcServer::run_rpc_server] cmdSock-nng_recv error: Object closed
+[2025-03-11 12:33:52.589] [debug] [WCF] [rpc_server.cpp::361::RpcServer::run_rpc_server] Leave RunRpcServer
+[2025-03-11 12:33:52.592] [debug] [WCF] [rpc_server.cpp::113::RpcServer::stop] 等待命令线程关闭
+[2025-03-11 12:33:52.592] [debug] [WCF] [rpc_server.cpp::116::RpcServer::stop] 命令线程已经关闭
+[2025-03-11 12:33:52.592] [debug] [WCF] [rpc_server.cpp::122::RpcServer::stop] 消息线程已经关闭
+[2025-03-11 12:33:52.592] [info] [WCF] [rpc_server.cpp::123::RpcServer::stop] RPC 服务已停止
+[2025-03-11 12:33:52.592] [warning] [WCF] [rpc_server.cpp::101::RpcServer::stop] RPC 服务未运行
+[2025-03-11 12:33:52.592] [debug] [WCF] [rpc_server.cpp::66::RpcServer::~RpcServer] RpcServer 被析构，释放所有资源
+[2025-03-11 12:34:14.939] [debug] [WCF] [log.hpp::68::Log::InitLogger] InitLogger with debug level
+[2025-03-11 12:34:14.939] [info] [WCF] [spy.cpp::32::Spy::Init] WCF 支持版本: 3.9.12.17，当前版本: 3.9.12.17
+[2025-03-11 12:34:14.939] [debug] [WCF] [rpc_server.cpp::60::RpcServer::RpcServer] RpcServer 构造: 端口 10086
+[2025-03-11 12:34:14.939] [info] [WCF] [rpc_server.cpp::94::RpcServer::start] RPC 服务器成功启动，监听端口: 10086
+[2025-03-11 12:34:14.940] [info] [WCF] [rpc_server.cpp::324::RpcServer::run_rpc_server] CMD Server listening on tcp://0.0.0.0:10086
+[2025-03-11 12:34:14.944] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x01[Functions_FUNC_IS_LOGIN] length: 2
+[2025-03-11 12:34:14.944] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 12:34:14.945] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x10[Functions_FUNC_GET_SELF_WXID] length: 2
+[2025-03-11 12:34:14.945] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 4
+[2025-03-11 12:34:14.945] [debug] [WCF] [rpc_server.cpp::286::RpcServer::dispatcher] 0x12[Functions_FUNC_GET_CONTACTS] length: 2
+[2025-03-11 12:34:14.967] [debug] [WCF] [rpc_server.cpp::339::RpcServer::run_rpc_server] Send data length 98135
+[2025-03-11 12:34:14.983] [debug] [WCF] [spy.cpp::40::Spy::Cleanup] CleanupSpy
+[2025-03-11 12:34:14.983] [error] [WCF] [rpc_server.cpp::333::RpcServer::run_rpc_server] cmdSock-nng_recv error: Object closed
+[2025-03-11 12:34:14.983] [debug] [WCF] [rpc_server.cpp::361::RpcServer::run_rpc_server] Leave RunRpcServer
+[2025-03-11 12:34:14.986] [debug] [WCF] [rpc_server.cpp::113::RpcServer::stop] 等待命令线程关闭
+[2025-03-11 12:34:14.986] [debug] [WCF] [rpc_server.cpp::116::RpcServer::stop] 命令线程已经关闭
+[2025-03-11 12:34:14.986] [debug] [WCF] [rpc_server.cpp::122::RpcServer::stop] 消息线程已经关闭
+[2025-03-11 12:34:14.986] [info] [WCF] [rpc_server.cpp::123::RpcServer::stop] RPC 服务已停止
+[2025-03-11 12:34:14.986] [warning] [WCF] [rpc_server.cpp::101::RpcServer::stop] RPC 服务未运行
+[2025-03-11 12:34:14.986] [debug] [WCF] [rpc_server.cpp::66::RpcServer::~RpcServer] RpcServer 被析构，释放所有资源
