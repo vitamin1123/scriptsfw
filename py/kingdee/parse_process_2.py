@@ -43,8 +43,9 @@ def build_dag(process_data):
         if isinstance(participant, list):
             for p in participant:
                 participant_info = p.get("value", "N/A")
+                role_id = p.get("roleId", "N/A")  # 获取角色编号
                 condition_exp = p.get("conditionExpression", "无条件")
-                participant_details.append(f"{participant_info} (条件: {condition_exp})")
+                participant_details.append(f"{participant_info} (角色编号: {role_id}(条件: {condition_exp})")
         
         node_info[node_id] = {
             "name": node_name,
@@ -96,11 +97,11 @@ def main(xml_file):
         print(f"路径 {idx}:")
         for node in path:
             info = node_info[node]
-            print(f"  - {info['name']} (类型: {info['type']}, 条件: {info['condition']})")
+            print(f"  - {info['name']} (类型: {info['type']}), 条件: {info['condition']})")
             if info["participant"]:
                 print(f"    参与人: {', '.join(info['participant'])}")
         print()
     
 if __name__ == "__main__":
-    xml_file = r"C:\Users\xyy\Downloads\Proc_er_dailyreimbursebill_audit_8 (1)\Proc_er_dailyreimbursebill_audit_8.process"
+    xml_file = "/Users/xyy/Downloads/Proc_er_dailyreimbursebill_audit_8.xml"
     main(xml_file)
