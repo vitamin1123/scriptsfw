@@ -103,5 +103,6 @@ def main(xml_file):
         print()
     
 if __name__ == "__main__":
-    xml_file = "/Users/xyy/Downloads/Proc_er_dailyreimbursebill_audit_8.xml"
+    # xml_file = "/Users/xyy/Downloads/Proc_er_dailyreimbursebill_audit_8.xml"
+    xml_file = xml_file = input("文件路径:") 
     main(xml_file)

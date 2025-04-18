@@ -103,5 +103,6 @@ def parse_workflow(xml_file):
 # 使用示例（假设XML文件名为 'workflow.xml'）
 if __name__ == "__main__":
     #xml_file = r"C:\Users\xyy\Downloads\Proc_ap_payapply_audit_2 (1)\Proc_ap_payapply_audit_2.xml"  # 请将此替换为实际文件路径
-    xml_file = r"C:\Users\xyy\Downloads\Proc_ap_payapply_audit_2(75)\Proc_er_dailyreimbursebill_audit_8.process"
+    # xml_file = r"C:\Users\xyy\Downloads\Proc_ap_payapply_audit_2(75)\Proc_er_dailyreimbursebill_audit_8.process"
+    xml_file = input("文件路径:") 
     workflow = parse_workflow(xml_file)

@@ -112,5 +112,6 @@ def main(xml_file):
             print(f"  连接: {', '.join(source_names)} -> {', '.join(target_names)}")
     
 if __name__ == "__main__":
-    xml_file = r"C:\Users\xyy\Downloads\Proc_er_dailyreimbursebill_audit_8 (1)\Proc_er_dailyreimbursebill_audit_8.process"
+    # xml_file = r"C:\Users\xyy\Downloads\Proc_er_dailyreimbursebill_audit_8 (1)\Proc_er_dailyreimbursebill_audit_8.process"
+    xml_file = input("文件路径:") 
     main(xml_file)
