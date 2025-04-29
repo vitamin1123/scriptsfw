@@ -1,0 +1,4439 @@
+[
+    {
+        "p": [
+            {
+                "visible": true,
+                "keys": [
+                    "combofield1"
+                ],
+                "policy": ""
+            },
+            {
+                "visible": true,
+                "keys": [
+                    "iconap0"
+                ],
+                "policy": ""
+            }
+        ],
+        "a": "setVisible"
+    },
+    {
+        "p": [
+            {
+                "st": [
+                    [
+                        "model",
+                        {
+                            "zh_CN": "对公报销单"
+                        },
+                        null,
+                        true
+                    ]
+                ],
+                "v": "model",
+                "k": "combofield0"
+            },
+            {
+                "st": [
+                    [
+                        "billno",
+                        {
+                            "zh_CN": "单据编号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "billstatus",
+                        {
+                            "zh_CN": "单据状态"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "creator",
+                        {
+                            "zh_CN": "创建人"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "modifier",
+                        {
+                            "zh_CN": "修改人"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "auditor",
+                        {
+                            "zh_CN": "审核人"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "auditdate",
+                        {
+                            "zh_CN": "审核日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "modifytime",
+                        {
+                            "zh_CN": "修改时间"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "createtime",
+                        {
+                            "zh_CN": "创建时间"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "company",
+                        {
+                            "zh_CN": "公司"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "bizdate",
+                        {
+                            "zh_CN": "申请日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "iscurrency",
+                        {
+                            "zh_CN": "多币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "description",
+                        {
+                            "zh_CN": "事由"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "costcompany",
+                        {
+                            "zh_CN": "费用承担公司"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "costdept",
+                        {
+                            "zh_CN": "费用承担部门"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "tel",
+                        {
+                            "zh_CN": "联系方式"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "applier",
+                        {
+                            "zh_CN": "申请人"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "org",
+                        {
+                            "zh_CN": "部门"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "currency",
+                        {
+                            "zh_CN": "本位币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "formid",
+                        {
+                            "zh_CN": "表单ID"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "applierpositionstr",
+                        {
+                            "zh_CN": "职位文本"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "hasvoucher",
+                        {
+                            "zh_CN": "是否生成凭证"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "head_paydate",
+                        {
+                            "zh_CN": "付款日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "isoverbudget",
+                        {
+                            "zh_CN": "是否超预算"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "unauditmsg",
+                        {
+                            "zh_CN": "反审核意见"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "attachmentcount",
+                        {
+                            "zh_CN": "附件数"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "reimburseamount",
+                        {
+                            "zh_CN": "报销金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "approveamount",
+                        {
+                            "zh_CN": "核定金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "reimbursecurrency",
+                        {
+                            "zh_CN": "报销金额币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "payamount",
+                        {
+                            "zh_CN": "付现"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "paycurrency",
+                        {
+                            "zh_CN": "付现金额币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "auditopinion",
+                        {
+                            "zh_CN": "审核意见"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "imageno",
+                        {
+                            "zh_CN": "影像编号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sourcebilltype",
+                        {
+                            "zh_CN": "源单类型(已废弃)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "totalaccloanamount",
+                        {
+                            "zh_CN": "冲销金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "nextauditor",
+                        {
+                            "zh_CN": "下一步审核人"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "payedamount",
+                        {
+                            "zh_CN": "已付金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "notpayamount",
+                        {
+                            "zh_CN": "未付金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "ispaybyhead",
+                        {
+                            "zh_CN": "按单头付款"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharerule",
+                        {
+                            "zh_CN": "分摊规则"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharerule_startdate",
+                        {
+                            "zh_CN": "开始月份"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharerule_enddate",
+                        {
+                            "zh_CN": "结束月份"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharemethod",
+                        {
+                            "zh_CN": "分摊方法"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "isbeforeshare",
+                        {
+                            "zh_CN": "费用分摊"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "paycompany",
+                        {
+                            "zh_CN": "支付公司"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "offsetinvoiceno",
+                        {
+                            "zh_CN": "可抵扣发票号码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "iscrepayablebill",
+                        {
+                            "zh_CN": "生成应付单"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "reimbursetype",
+                        {
+                            "zh_CN": "报账类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "tarbillstatus",
+                        {
+                            "zh_CN": "目标单据"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "projectsharecount",
+                        {
+                            "zh_CN": "下游项目成本分摊单数"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "isshared",
+                        {
+                            "zh_CN": "是否已分摊"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedamount",
+                        {
+                            "zh_CN": "已分摊金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "is_all_einvoice",
+                        {
+                            "zh_CN": "发票状态"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "needimagescan",
+                        {
+                            "zh_CN": "需要影像扫描"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "isonaccount",
+                        {
+                            "zh_CN": "是否挂账"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingamount",
+                        {
+                            "zh_CN": "已预提金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceoffsetamount",
+                        {
+                            "zh_CN": "抵扣税额（发票信息）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invokeinvoicecloud",
+                        {
+                            "zh_CN": "是否与发票云交互"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "bookeddate",
+                        {
+                            "zh_CN": "记账日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "automapinvoice",
+                        {
+                            "zh_CN": "智能发票报销"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "noinvoice",
+                        {
+                            "zh_CN": "无票"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "proxytax",
+                        {
+                            "zh_CN": "代扣代缴"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "billpayertype",
+                        {
+                            "zh_CN": "往来类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "billpayerid",
+                        {
+                            "zh_CN": "往来单位"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "detailtype",
+                        {
+                            "zh_CN": "关联业务"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "needsuppleinvoice",
+                        {
+                            "zh_CN": "发票后补"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "projecttype",
+                        {
+                            "zh_CN": "业务分类"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetorg",
+                        {
+                            "zh_CN": "资产组织"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "isneedinstall",
+                        {
+                            "zh_CN": "需安装"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "std_costcenter",
+                        {
+                            "zh_CN": "成本中心"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assettype",
+                        {
+                            "zh_CN": "资产类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "onaccountamount",
+                        {
+                            "zh_CN": "挂账金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "abovequota",
+                        {
+                            "zh_CN": "是否超额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "frameworkcontract",
+                        {
+                            "zh_CN": "框架合同"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractsconn",
+                        {
+                            "zh_CN": "关联合同"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "isinvoicemodified",
+                        {
+                            "zh_CN": "发票修改"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "ispush",
+                        {
+                            "zh_CN": "是否合同下推生成"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "stdover",
+                        {
+                            "zh_CN": "是否超标（提交后有值）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "autogenshare",
+                        {
+                            "zh_CN": "自动生成分摊单"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "isonway",
+                        {
+                            "zh_CN": "是否支持在途"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "isredoffset",
+                        {
+                            "zh_CN": "红冲"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "redoffsetdes",
+                        {
+                            "zh_CN": "红冲说明"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "projectower",
+                        {
+                            "zh_CN": "项目干系人"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "v096_sfzcxz",
+                        {
+                            "zh_CN": "是否包含非日常薪资"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "v096_lxsm",
+                        {
+                            "zh_CN": "1. 立项申请备注"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "v096_tmzz",
+                        {
+                            "zh_CN": "是否同名转账"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "v096_zbsm",
+                        {
+                            "zh_CN": "2. 招标比价备注"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "v096_htsm",
+                        {
+                            "zh_CN": "3. 合同说明"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "v096_jgsm",
+                        {
+                            "zh_CN": "4. 竣工验收说明"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "v096_jjsm",
+                        {
+                            "zh_CN": "5. 基建结账协议说明"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "v096_qtsm",
+                        {
+                            "zh_CN": "6. 其他说明"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "v096_htzje",
+                        {
+                            "zh_CN": "合同总金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "v096_yfkje",
+                        {
+                            "zh_CN": "已付款金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "v096_ykpje",
+                        {
+                            "zh_CN": "已开票金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "v096_basedatafield",
+                        {
+                            "zh_CN": "研发项目"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.expenseitem",
+                        {
+                            "zh_CN": "费用明细.费用项目"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.happendate",
+                        {
+                            "zh_CN": "费用明细.费用发生日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.entrycurrency",
+                        {
+                            "zh_CN": "费用明细.币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.exchangerate",
+                        {
+                            "zh_CN": "费用明细.汇率"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.expenseamount",
+                        {
+                            "zh_CN": "费用明细.报销金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.currexpenseamount",
+                        {
+                            "zh_CN": "费用明细.报销金额(本位币)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.expeapproveamount",
+                        {
+                            "zh_CN": "费用明细.核定金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.expeapprovecurramount",
+                        {
+                            "zh_CN": "费用明细.核定金额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.entrycostcompany",
+                        {
+                            "zh_CN": "费用明细.费用承担公司"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.entrycostdept",
+                        {
+                            "zh_CN": "费用明细.费用承担部门"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.std_project",
+                        {
+                            "zh_CN": "费用明细.船号/项目"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.expquotetype",
+                        {
+                            "zh_CN": "费用明细.换算方式"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.orientryamount",
+                        {
+                            "zh_CN": "费用明细.不含税金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.taxrate",
+                        {
+                            "zh_CN": "费用明细.税率（%）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.taxamount",
+                        {
+                            "zh_CN": "费用明细.税额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.remark",
+                        {
+                            "zh_CN": "费用明细.备注"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.is_special_invoice",
+                        {
+                            "zh_CN": "费用明细.专票"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.invoicelink",
+                        {
+                            "zh_CN": "费用明细.发票代码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.taxclasscode",
+                        {
+                            "zh_CN": "费用明细.税收分类编码基础资料"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.offset",
+                        {
+                            "zh_CN": "费用明细.是否抵扣"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.invoiceno_entry",
+                        {
+                            "zh_CN": "费用明细.发票号码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.serialno_entry",
+                        {
+                            "zh_CN": "费用明细.发票序列号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.airportconstructionfee",
+                        {
+                            "zh_CN": "费用明细.机场建设费及其他"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.expensegoodsname",
+                        {
+                            "zh_CN": "费用明细.商品名称"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.deductibletax",
+                        {
+                            "zh_CN": "费用明细.抵扣税额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.itemfrom",
+                        {
+                            "zh_CN": "费用明细.来源"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.invoicetypeitem",
+                        {
+                            "zh_CN": "费用明细.发票类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.settlestatus",
+                        {
+                            "zh_CN": "费用明细.结算状态"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.expentrystatus",
+                        {
+                            "zh_CN": "费用明细.单据状态"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.iscrepayableentry",
+                        {
+                            "zh_CN": "费用明细.生成应付单"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.price",
+                        {
+                            "zh_CN": "费用明细.价款"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.iscreateprojectcostshare",
+                        {
+                            "zh_CN": "费用明细.生成项目分摊单"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.proxyamt",
+                        {
+                            "zh_CN": "费用明细.代扣代缴个税"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.curproxyamt",
+                        {
+                            "zh_CN": "费用明细.代扣代缴个税(本位币)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.exporisharedamount",
+                        {
+                            "zh_CN": "费用明细.已分摊金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.expsharedamount",
+                        {
+                            "zh_CN": "费用明细.已分摊金额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.iteminoutamount",
+                        {
+                            "zh_CN": "费用明细.转出金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.itemreasonfortransferout",
+                        {
+                            "zh_CN": "费用明细.转出原因"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.exporiwithholdingamount",
+                        {
+                            "zh_CN": "费用明细.已预提金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.expwithholdingamount",
+                        {
+                            "zh_CN": "费用明细.已预提金额本位币"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.entrycontractno",
+                        {
+                            "zh_CN": "费用明细.合同号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.entryprojectno",
+                        {
+                            "zh_CN": "费用明细.立项号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.wbpaytype",
+                        {
+                            "zh_CN": "费用明细.付款类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.wbcurrency",
+                        {
+                            "zh_CN": "费用明细.核销币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.wbexchangrate",
+                        {
+                            "zh_CN": "费用明细.核销汇率"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.wbamount",
+                        {
+                            "zh_CN": "费用明细.核销金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.wbcuramount",
+                        {
+                            "zh_CN": "费用明细.核销金额本位币"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.wbsrcbillid",
+                        {
+                            "zh_CN": "费用明细.（核销）源单id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.wbsrcentryid",
+                        {
+                            "zh_CN": "费用明细.（核销）分录id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.wbsrcbilltype",
+                        {
+                            "zh_CN": "费用明细.源单类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.wbsrcbillno",
+                        {
+                            "zh_CN": "费用明细.源单编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.curprice",
+                        {
+                            "zh_CN": "费用明细.核定金额不含税金额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.assetbillno",
+                        {
+                            "zh_CN": "费用明细.卡片编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.assetnumber",
+                        {
+                            "zh_CN": "费用明细.资产编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.assetcat",
+                        {
+                            "zh_CN": "费用明细.资产类别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.assetstoreplace",
+                        {
+                            "zh_CN": "费用明细.存放地点"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.subjectmatter",
+                        {
+                            "zh_CN": "费用明细.标的物"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.assetunit",
+                        {
+                            "zh_CN": "费用明细.计量单位"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.assetquantity",
+                        {
+                            "zh_CN": "费用明细.数量"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.pricewithtax",
+                        {
+                            "zh_CN": "费用明细.含税单价"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.std_entrycostcenter",
+                        {
+                            "zh_CN": "费用明细.成本中心"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.entryproducttype",
+                        {
+                            "zh_CN": "费用明细.产品类别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.assetmodel",
+                        {
+                            "zh_CN": "费用明细.规格型号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.assetname",
+                        {
+                            "zh_CN": "费用明细.资产名称"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.entrycontractname",
+                        {
+                            "zh_CN": "费用明细.合同名称"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.wbquotetype",
+                        {
+                            "zh_CN": "费用明细.核销换算方式"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.contractitem",
+                        {
+                            "zh_CN": "费用明细.合同付款条目id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.approvetax",
+                        {
+                            "zh_CN": "费用明细.核定税额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.iscreateappaycount",
+                        {
+                            "zh_CN": "费用明细.生成应付次数"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.reimctldept",
+                        {
+                            "zh_CN": "费用明细.额度控制部门"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.splitline",
+                        {
+                            "zh_CN": "费用明细.拆分父分录"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.expnonpayamount",
+                        {
+                            "zh_CN": "费用明细.在途金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.treattype",
+                        {
+                            "zh_CN": "费用明细.招待类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.meettype",
+                        {
+                            "zh_CN": "费用明细.会议类别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.meetgrade",
+                        {
+                            "zh_CN": "费用明细.会议级别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.cityarea",
+                        {
+                            "zh_CN": "费用明细.城市类别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.reimburselevel",
+                        {
+                            "zh_CN": "费用明细.报销级别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.feestandardamt",
+                        {
+                            "zh_CN": "费用明细.费用标准金额(页面不可见)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.feestandarddesc",
+                        {
+                            "zh_CN": "费用明细.费用标准"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.treatnum",
+                        {
+                            "zh_CN": "费用明细.招待人数"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.escortnum",
+                        {
+                            "zh_CN": "费用明细.陪同人数"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.controlamt",
+                        {
+                            "zh_CN": "费用明细.可报销金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.isover",
+                        {
+                            "zh_CN": "费用明细.超费用标准"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.overdesc",
+                        {
+                            "zh_CN": "费用明细.超标说明(暂未支持)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.goodsnum",
+                        {
+                            "zh_CN": "费用明细.酒水瓶数"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.feestandid",
+                        {
+                            "zh_CN": "费用明细.费用标准基础资料"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.daysnum",
+                        {
+                            "zh_CN": "费用明细.住宿天数"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.treatway",
+                        {
+                            "zh_CN": "费用明细.招待方式"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.expisredoffset",
+                        {
+                            "zh_CN": "费用明细.红冲(明细)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.otherstandarddesc",
+                        {
+                            "zh_CN": "费用明细.酒水标准"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.otherfeeamount",
+                        {
+                            "zh_CN": "费用明细.酒水金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.otherstandamount",
+                        {
+                            "zh_CN": "费用明细.酒水标准金额(页面不可见)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.v096_zdrs",
+                        {
+                            "zh_CN": "费用明细.招待人数"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.v096_zdbz",
+                        {
+                            "zh_CN": "费用明细.招待标准"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.v096_cbje",
+                        {
+                            "zh_CN": "费用明细.招待剩余限额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.v096_lplx",
+                        {
+                            "zh_CN": "费用明细.礼品类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.v096_isabroad",
+                        {
+                            "zh_CN": "费用明细.是否境外"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.v096_bxcesp",
+                        {
+                            "zh_CN": "费用明细.报销差额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.v096_bxcesdje",
+                        {
+                            "zh_CN": "费用明细.报销差额锁定金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.v096_bxcery",
+                        {
+                            "zh_CN": "费用明细.报销差额人员"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.expenseentryentity_lk.expenseentryentity_lk_stableid",
+                        {
+                            "zh_CN": "费用明细.关联子实体.源单主实体编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.expenseentryentity_lk.expenseentryentity_lk_sbillid",
+                        {
+                            "zh_CN": "费用明细.关联子实体.源单内码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity.expenseentryentity_lk.expenseentryentity_lk_sid",
+                        {
+                            "zh_CN": "费用明细.关联子实体.源单主实体内码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.loanexchangerate",
+                        {
+                            "zh_CN": "冲借款.汇率"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.curraccloanamount",
+                        {
+                            "zh_CN": "冲借款.冲销金额(本位币)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.accloanamount",
+                        {
+                            "zh_CN": "冲借款.冲销金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.loanamount",
+                        {
+                            "zh_CN": "冲借款.借款余额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.currloanamount",
+                        {
+                            "zh_CN": "冲借款.借款余额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.loancurrency",
+                        {
+                            "zh_CN": "冲借款.币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.loanbillnov1",
+                        {
+                            "zh_CN": "冲借款.单据编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.loanapplydatev1",
+                        {
+                            "zh_CN": "冲借款.申请日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.loandescriptionv1",
+                        {
+                            "zh_CN": "冲借款.事由"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.sourcesign",
+                        {
+                            "zh_CN": "冲借款.是否关联申请"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.writeoffquotetype",
+                        {
+                            "zh_CN": "冲借款.换算方式（冲借款）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.loanperson",
+                        {
+                            "zh_CN": "冲借款.借款人"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.sourceentryid",
+                        {
+                            "zh_CN": "冲借款.借款明细分录ID"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.sourcebillid",
+                        {
+                            "zh_CN": "冲借款.源单id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.sourceexpenseitem",
+                        {
+                            "zh_CN": "冲借款.费用项目"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.srcbilltype",
+                        {
+                            "zh_CN": "冲借款.源单类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.sourceentrycostdept",
+                        {
+                            "zh_CN": "冲借款.费用承担部门"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.sourceentrycostcompany",
+                        {
+                            "zh_CN": "冲借款.费用承担公司"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.srcofsrcentryid",
+                        {
+                            "zh_CN": "冲借款.冲借款源分录id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.srcentrywltype",
+                        {
+                            "zh_CN": "冲借款.往来类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.srcentrywlunit",
+                        {
+                            "zh_CN": "冲借款.往来单位"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.std_srcentrycostcenter",
+                        {
+                            "zh_CN": "冲借款.成本中心"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.loancontractno",
+                        {
+                            "zh_CN": "冲借款.合同号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.loanprojectno",
+                        {
+                            "zh_CN": "冲借款.立项号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.writeoffmoney_lk.writeoffmoney_lk_stableid",
+                        {
+                            "zh_CN": "冲借款.关联子实体.源单主实体编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.writeoffmoney_lk.writeoffmoney_lk_sbillid",
+                        {
+                            "zh_CN": "冲借款.关联子实体.源单内码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffmoney.writeoffmoney_lk.writeoffmoney_lk_sid",
+                        {
+                            "zh_CN": "冲借款.关联子实体.源单主实体内码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.paymode",
+                        {
+                            "zh_CN": "收款信息.支付方式"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.payer",
+                        {
+                            "zh_CN": "收款信息.收款人（个人）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.payerbank",
+                        {
+                            "zh_CN": "收款信息.开户银行"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.payeraccount02",
+                        {
+                            "zh_CN": "收款信息.银行账号(显示_old)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.payeraccount",
+                        {
+                            "zh_CN": "收款信息.银行账号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.accountcurrency",
+                        {
+                            "zh_CN": "收款信息.币种"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.accexchangerate",
+                        {
+                            "zh_CN": "收款信息.汇率"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.orireceiveamount",
+                        {
+                            "zh_CN": "收款信息.收款金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.receiveamount",
+                        {
+                            "zh_CN": "收款信息.收款金额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.payeraccount01",
+                        {
+                            "zh_CN": "收款信息.银行账号4位"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.banklogo",
+                        {
+                            "zh_CN": "收款信息.银行卡logo图标"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.entryrepaydate",
+                        {
+                            "zh_CN": "收款信息.还款日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.accbalamount",
+                        {
+                            "zh_CN": "收款信息.可用余额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.oriaccbalamount",
+                        {
+                            "zh_CN": "收款信息.可用余额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.oriaccpayedamount",
+                        {
+                            "zh_CN": "收款信息.已付金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.oriaccnotpayamount",
+                        {
+                            "zh_CN": "收款信息.未付金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.accpayedamount",
+                        {
+                            "zh_CN": "收款信息.已付金额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.accnotpayamount",
+                        {
+                            "zh_CN": "收款信息.未付金额(本位币)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.buildedamount",
+                        {
+                            "zh_CN": "收款信息.已出单金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.payername",
+                        {
+                            "zh_CN": "收款信息.收款人"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.accquotetype",
+                        {
+                            "zh_CN": "收款信息.换算方式"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.billstatusfield",
+                        {
+                            "zh_CN": "收款信息.单据状态"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.payertype",
+                        {
+                            "zh_CN": "收款信息.收款人类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.supplier",
+                        {
+                            "zh_CN": "收款信息.收款人（供应商）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.customer",
+                        {
+                            "zh_CN": "收款信息.收款人（客户）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.casorg",
+                        {
+                            "zh_CN": "收款信息.收款人（内部公司）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.payeraccountname",
+                        {
+                            "zh_CN": "收款信息.账户名称"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.ispaynow",
+                        {
+                            "zh_CN": "收款信息.立即支付"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.recsrcbillno",
+                        {
+                            "zh_CN": "收款信息.源单编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.recsrcentryid",
+                        {
+                            "zh_CN": "收款信息.（核销）分录id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.recsrcbillid",
+                        {
+                            "zh_CN": "收款信息.（核销）源单id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.v096_zbj",
+                        {
+                            "zh_CN": "收款信息.质保金"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.v096_zbsd",
+                        {
+                            "zh_CN": "收款信息.质保金已锁定"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.v096_htje",
+                        {
+                            "zh_CN": "收款信息.合同净额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.v096_htjesd",
+                        {
+                            "zh_CN": "收款信息.合同净额已锁定"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.accountentry_lk.accountentry_lk_stableid",
+                        {
+                            "zh_CN": "收款信息.关联子实体.源单主实体编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.accountentry_lk.accountentry_lk_sbillid",
+                        {
+                            "zh_CN": "收款信息.关联子实体.源单内码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "accountentry.accountentry_lk.accountentry_lk_sid",
+                        {
+                            "zh_CN": "收款信息.关联子实体.源单主实体内码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.applybillno",
+                        {
+                            "zh_CN": "冲申请.申请单号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.applyperson",
+                        {
+                            "zh_CN": "冲申请.申请人"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.applybilldate",
+                        {
+                            "zh_CN": "冲申请.申请日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.applydescription",
+                        {
+                            "zh_CN": "冲申请.事由"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.applycurrency",
+                        {
+                            "zh_CN": "冲申请.币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.applyexchangerate",
+                        {
+                            "zh_CN": "冲申请.汇率"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.orgiexpebalanceamount",
+                        {
+                            "zh_CN": "冲申请.可报销金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.expebalanceamount",
+                        {
+                            "zh_CN": "冲申请.可报销金额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.reimbursedamount",
+                        {
+                            "zh_CN": "冲申请.冲销金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.reimbursedcurramount",
+                        {
+                            "zh_CN": "冲申请.冲销金额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.sourceapplybillid",
+                        {
+                            "zh_CN": "冲申请.源单ID"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.sourceapplyentryid",
+                        {
+                            "zh_CN": "冲申请.申请明细分录ID"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.orgfield",
+                        {
+                            "zh_CN": "冲申请.费用承担部门"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.datefield",
+                        {
+                            "zh_CN": "冲申请.费用发生日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.expenseitemfield",
+                        {
+                            "zh_CN": "冲申请.费用项目"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.writeoffapplyquotetype",
+                        {
+                            "zh_CN": "冲申请.换算方式（冲申请）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.applycostcompany",
+                        {
+                            "zh_CN": "冲申请.费用承担公司"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.applyproject",
+                        {
+                            "zh_CN": "冲申请.项目"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.applycostdept",
+                        {
+                            "zh_CN": "冲申请.费用承担部门"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.std_applycostcenter",
+                        {
+                            "zh_CN": "冲申请.成本中心"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.applysourcesign",
+                        {
+                            "zh_CN": "冲申请.来源标识"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.writeoffapply_lk.writeoffapply_lk_stableid",
+                        {
+                            "zh_CN": "冲申请.关联子实体.源单主实体编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.writeoffapply_lk.writeoffapply_lk_sbillid",
+                        {
+                            "zh_CN": "冲申请.关联子实体.源单内码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "writeoffapply.writeoffapply_lk.writeoffapply_lk_sid",
+                        {
+                            "zh_CN": "冲申请.关联子实体.源单主实体内码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetbillno",
+                        {
+                            "zh_CN": "付款信息.单据编号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetbizdate",
+                        {
+                            "zh_CN": "付款信息.业务日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetpaydate",
+                        {
+                            "zh_CN": "付款信息.付款日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetpayorg",
+                        {
+                            "zh_CN": "付款信息.付款人"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetopenorg",
+                        {
+                            "zh_CN": "付款信息.核算组织"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetpayacct",
+                        {
+                            "zh_CN": "付款信息.付款账号（文本）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetpaybank",
+                        {
+                            "zh_CN": "付款信息.付款银行"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetcurrency",
+                        {
+                            "zh_CN": "付款信息.收款币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetexchange",
+                        {
+                            "zh_CN": "付款信息.收款汇率"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetpayamt",
+                        {
+                            "zh_CN": "付款信息.收款金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetlocalamount",
+                        {
+                            "zh_CN": "付款信息.收款金额(本位币)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetentrustorg",
+                        {
+                            "zh_CN": "付款信息.委托付款组织"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetsettletype",
+                        {
+                            "zh_CN": "付款信息.结算方式"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetbillid",
+                        {
+                            "zh_CN": "付款信息.目标单据id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.targetpayacctid",
+                        {
+                            "zh_CN": "付款信息.付款账号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.dpcurrency",
+                        {
+                            "zh_CN": "付款信息.付款币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.dpexchangerate",
+                        {
+                            "zh_CN": "付款信息.付款汇率"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.dpamt",
+                        {
+                            "zh_CN": "付款信息.付款金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.dplocalamt",
+                        {
+                            "zh_CN": "付款信息.付款金额(本位币)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.agreedrate",
+                        {
+                            "zh_CN": "付款信息.兑换汇率"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.lossamt",
+                        {
+                            "zh_CN": "付款信息.汇兑损益"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.fee",
+                        {
+                            "zh_CN": "付款信息.手续费"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "caspayentry.feecurrency",
+                        {
+                            "zh_CN": "付款信息.手续费币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity_rule.entrycostcompany_orgrule",
+                        {
+                            "zh_CN": "分摊明细.费用承担公司"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity_rule.entrycostdept_orgrule",
+                        {
+                            "zh_CN": "分摊明细.费用承担部门"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity_rule.entrymonth_monthrule",
+                        {
+                            "zh_CN": "分摊明细.月份"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity_rule.std_project_comrule",
+                        {
+                            "zh_CN": "分摊明细.项目"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity_rule.sharerate_comrule",
+                        {
+                            "zh_CN": "分摊明细.分摊比例（%）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity_rule.sharewaitseq_comrule",
+                        {
+                            "zh_CN": "分摊明细.待摊行号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity_rule.sharewaitid_comrule",
+                        {
+                            "zh_CN": "分摊明细.待摊明细id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity_rule.sharecurrency_comrule",
+                        {
+                            "zh_CN": "分摊明细.分摊币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity_rule.shareamount_comrule",
+                        {
+                            "zh_CN": "分摊明细.分摊金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity_rule.shareappamount_comrule",
+                        {
+                            "zh_CN": "分摊明细.核定金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity_rule.shareremark",
+                        {
+                            "zh_CN": "分摊明细.备注"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity_rule.std_entrycostcenter_crule",
+                        {
+                            "zh_CN": "分摊明细.成本中心"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "expenseentryentity_rule.entryexpenseitem",
+                        {
+                            "zh_CN": "分摊明细.费用项目"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdentrycostcompany",
+                        {
+                            "zh_CN": "摊销明细.费用承担公司"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdentrycostdept",
+                        {
+                            "zh_CN": "摊销明细.费用承担部门"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdexpenseitem",
+                        {
+                            "zh_CN": "摊销明细.费用项目"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdstd_project",
+                        {
+                            "zh_CN": "摊销明细.项目"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdentrymonth",
+                        {
+                            "zh_CN": "摊销明细.月份"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdhappendate",
+                        {
+                            "zh_CN": "摊销明细.费用发生日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdentrycurrency",
+                        {
+                            "zh_CN": "摊销明细.币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdexchangerate",
+                        {
+                            "zh_CN": "摊销明细.汇率"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdexpenseamount",
+                        {
+                            "zh_CN": "摊销明细.报销金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdcurrexpenseamount",
+                        {
+                            "zh_CN": "摊销明细.报销金额(本位币)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdtaxrate",
+                        {
+                            "zh_CN": "摊销明细.税率（%）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdtaxamount",
+                        {
+                            "zh_CN": "摊销明细.税额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdorientryamount",
+                        {
+                            "zh_CN": "摊销明细.不含税金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdexpeapproveamount",
+                        {
+                            "zh_CN": "摊销明细.核定金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdexpeapprovecurramount",
+                        {
+                            "zh_CN": "摊销明细.核定金额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdprice",
+                        {
+                            "zh_CN": "摊销明细.核定不含税金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdsharerate",
+                        {
+                            "zh_CN": "摊销明细.分摊比例（%）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdremark",
+                        {
+                            "zh_CN": "摊销明细.备注"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdis_special_invoice",
+                        {
+                            "zh_CN": "摊销明细.专票"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdoffset",
+                        {
+                            "zh_CN": "摊销明细.是否抵扣"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sddeductibletax",
+                        {
+                            "zh_CN": "摊销明细.抵扣税额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdinvoiceno_entry",
+                        {
+                            "zh_CN": "摊销明细.发票号码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdinvoicelink",
+                        {
+                            "zh_CN": "摊销明细.发票代码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdserialno_entry",
+                        {
+                            "zh_CN": "摊销明细.发票序列号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdinvoicetypeitem",
+                        {
+                            "zh_CN": "摊销明细.发票类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdexpensegoodsname",
+                        {
+                            "zh_CN": "摊销明细.商品名称"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdtaxclasscode",
+                        {
+                            "zh_CN": "摊销明细.税收分类编码基础资料"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdairportconstructionfee",
+                        {
+                            "zh_CN": "摊销明细.机场建设费及其他"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sditemfrom",
+                        {
+                            "zh_CN": "摊销明细.来源"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.lkwaitentryid",
+                        {
+                            "zh_CN": "摊销明细.待摊明细id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdcurprice",
+                        {
+                            "zh_CN": "摊销明细.核定不含税金额本位币"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdquotetype",
+                        {
+                            "zh_CN": "摊销明细.换算方式"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdstd_entrycostcenter",
+                        {
+                            "zh_CN": "摊销明细.成本中心"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "sharedetailentry.sdapprovetax",
+                        {
+                            "zh_CN": "摊销明细.核定税额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whcurrency",
+                        {
+                            "zh_CN": "冲预提.币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whquotetype",
+                        {
+                            "zh_CN": "冲预提.换算方式"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whexchangerate",
+                        {
+                            "zh_CN": "冲预提.汇率"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.orgiwhbalanceamount",
+                        {
+                            "zh_CN": "冲预提.冲销余额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whbalanceamount",
+                        {
+                            "zh_CN": "冲预提.冲销余额(本位币)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whbursedamount",
+                        {
+                            "zh_CN": "冲预提.冲销金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whbursedcurramount",
+                        {
+                            "zh_CN": "冲预提.冲销金额(本位币)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.withholdingbillno",
+                        {
+                            "zh_CN": "冲预提.预提单号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whpayername",
+                        {
+                            "zh_CN": "冲预提.申请人"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whbizdate",
+                        {
+                            "zh_CN": "冲预提.申请日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whdescription",
+                        {
+                            "zh_CN": "冲预提.事由"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whbillpayertype",
+                        {
+                            "zh_CN": "冲预提.往来类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whbillpayerid",
+                        {
+                            "zh_CN": "冲预提.往来单位"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whitemid",
+                        {
+                            "zh_CN": "冲预提.费用项目"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whcostcompanyid",
+                        {
+                            "zh_CN": "冲预提.核算组织"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.withholdingtype",
+                        {
+                            "zh_CN": "冲预提.预提类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whsrcbillid",
+                        {
+                            "zh_CN": "冲预提.源单ID"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whsrcentryid",
+                        {
+                            "zh_CN": "冲预提.源单分录ID"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whsrcbilltype",
+                        {
+                            "zh_CN": "冲预提.源单类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whentrycostcompanyid",
+                        {
+                            "zh_CN": "冲预提.分录费用承担公司"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whentrycostdeptid",
+                        {
+                            "zh_CN": "冲预提.分录费用承担部门"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.whentrycostcenter",
+                        {
+                            "zh_CN": "冲预提.成本中心"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.withholdingentry_lk.withholdingentry_lk_stableid",
+                        {
+                            "zh_CN": "冲预提.关联子实体.源单主实体编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.withholdingentry_lk.withholdingentry_lk_sbillid",
+                        {
+                            "zh_CN": "冲预提.关联子实体.源单内码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "withholdingentry.withholdingentry_lk.withholdingentry_lk_sid",
+                        {
+                            "zh_CN": "冲预提.关联子实体.源单主实体内码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.invoiceno",
+                        {
+                            "zh_CN": "发票信息.发票号码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.invoicecode",
+                        {
+                            "zh_CN": "发票信息.发票代码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.taxrate_invoice",
+                        {
+                            "zh_CN": "发票信息.平均税率（%）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.invoicetype",
+                        {
+                            "zh_CN": "发票信息.发票类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.taxamount_invoice",
+                        {
+                            "zh_CN": "发票信息.税额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.totalamount",
+                        {
+                            "zh_CN": "发票信息.价税合计"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.serialno",
+                        {
+                            "zh_CN": "发票信息.发票序列号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.remark_invoice",
+                        {
+                            "zh_CN": "发票信息.备注"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.makeoutcompname",
+                        {
+                            "zh_CN": "发票信息.开票公司"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.count",
+                        {
+                            "zh_CN": "发票信息.发票张数"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.frominvoicecloud",
+                        {
+                            "zh_CN": "发票信息.发票云导入"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.buyerorg",
+                        {
+                            "zh_CN": "发票信息.收票公司"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.offset_invoice",
+                        {
+                            "zh_CN": "发票信息.是否抵扣"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.offsetamount",
+                        {
+                            "zh_CN": "发票信息.抵扣税额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.inoutamount",
+                        {
+                            "zh_CN": "发票信息.转出金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.buyerorgname",
+                        {
+                            "zh_CN": "发票信息.收票公司"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.validatemessage",
+                        {
+                            "zh_CN": "发票信息.发票校验结果"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.invoicedate",
+                        {
+                            "zh_CN": "发票信息.开票日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.passengername",
+                        {
+                            "zh_CN": "发票信息.旅客"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.invoiceairportconstfee",
+                        {
+                            "zh_CN": "发票信息.机场建设费及其他"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.alltaxrate",
+                        {
+                            "zh_CN": "发票信息.税率(%)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.invoicefrom",
+                        {
+                            "zh_CN": "发票信息.发票来源"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.ismapexpense",
+                        {
+                            "zh_CN": "发票信息.关联费用明细"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.invoicefromcity",
+                        {
+                            "zh_CN": "发票信息.出发地"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.invoicetocity",
+                        {
+                            "zh_CN": "发票信息.目的地"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.ie_validatest",
+                        {
+                            "zh_CN": "发票信息.查验状态"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.seatgrade",
+                        {
+                            "zh_CN": "发票信息.座位等级"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.istartcity",
+                        {
+                            "zh_CN": "发票信息.出发城市"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.idestcity",
+                        {
+                            "zh_CN": "发票信息.目的城市"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.istartprovince",
+                        {
+                            "zh_CN": "发票信息.出发省份"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.idestprovince",
+                        {
+                            "zh_CN": "发票信息.目的省份"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.invoicenotaxamount",
+                        {
+                            "zh_CN": "发票信息.不含税金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.transportnote",
+                        {
+                            "zh_CN": "发票信息.运输票据"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.reasonfortransferout",
+                        {
+                            "zh_CN": "发票信息.转出原因"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.invoiceischange",
+                        {
+                            "zh_CN": "发票信息.是否修改"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.buyertaxno",
+                        {
+                            "zh_CN": "发票信息.收票方税号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.ticketchanges",
+                        {
+                            "zh_CN": "发票信息.机票状态"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.sequencenum",
+                        {
+                            "zh_CN": "发票信息.是否连号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.flighttrainnums",
+                        {
+                            "zh_CN": "发票信息.航班号/车次"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.issupplement",
+                        {
+                            "zh_CN": "发票信息.后补发票"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.billcreatetime",
+                        {
+                            "zh_CN": "发票信息.采集时间"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.passverifybuyername",
+                        {
+                            "zh_CN": "发票信息.发票抬头一致"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.passverifybuyertaxno",
+                        {
+                            "zh_CN": "发票信息.发票税号一致"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.personalinvoice",
+                        {
+                            "zh_CN": "发票信息.个人发票"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.invoicegoodsname",
+                        {
+                            "zh_CN": "发票信息.商品名称"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.invoicealltaxcode",
+                        {
+                            "zh_CN": "发票信息.税收分类编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.customeridnumber",
+                        {
+                            "zh_CN": "发票信息.身份证"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.airconstfee",
+                        {
+                            "zh_CN": "发票信息.机场建设费"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.othertotaltaxamount",
+                        {
+                            "zh_CN": "发票信息.其他税费"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.insurancepremium",
+                        {
+                            "zh_CN": "发票信息.保险费"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.invaddr",
+                        {
+                            "zh_CN": "发票信息.发票下载地址"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.specmodel_h",
+                        {
+                            "zh_CN": "发票信息.规格型号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.unit_h",
+                        {
+                            "zh_CN": "发票信息.单位"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.num_h",
+                        {
+                            "zh_CN": "发票信息.数量"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.unitprice_h",
+                        {
+                            "zh_CN": "发票信息.单价"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.salertaxno_h",
+                        {
+                            "zh_CN": "发票信息.开票方税号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.islinkagedetail",
+                        {
+                            "zh_CN": "发票信息.是否费用联动"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.isred",
+                        {
+                            "zh_CN": "发票信息.红字发票"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.region",
+                        {
+                            "zh_CN": "发票信息.地域"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.isxbrl",
+                        {
+                            "zh_CN": "发票信息.是否xbrl"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.uploadseq",
+                        {
+                            "zh_CN": "发票信息.采集顺序"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.sequencenuminfo",
+                        {
+                            "zh_CN": "发票信息.连号信息"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceentry.invoicecurrency",
+                        {
+                            "zh_CN": "发票信息.发票币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceitementry.itementryid",
+                        {
+                            "zh_CN": "发票明细.费用项目分录id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceitementry.invoiceheadentryid",
+                        {
+                            "zh_CN": "发票明细.发票头分录id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceitementry.unitprice",
+                        {
+                            "zh_CN": "发票明细.不含税单价"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceitementry.invoiceitemtaxrate",
+                        {
+                            "zh_CN": "发票明细.税率"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceitementry.unit",
+                        {
+                            "zh_CN": "发票明细.单位"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceitementry.excludeamount",
+                        {
+                            "zh_CN": "发票明细.不含税金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceitementry.specmodel",
+                        {
+                            "zh_CN": "发票明细.规格型号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceitementry.invoiceitemtaxamout",
+                        {
+                            "zh_CN": "发票明细.税额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceitementry.goodscode",
+                        {
+                            "zh_CN": "发票明细.税收分类编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceitementry.num",
+                        {
+                            "zh_CN": "发票明细.数量"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceitementry.goodsname",
+                        {
+                            "zh_CN": "发票明细.商品名称"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceitementry.invoiceitemoffset",
+                        {
+                            "zh_CN": "发票明细.是否抵扣"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceitementry.salertaxno",
+                        {
+                            "zh_CN": "发票明细.开票方税号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceitementry.invoicecloudoffset",
+                        {
+                            "zh_CN": "发票明细.发票抵扣"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceandexpense.expenseentryid",
+                        {
+                            "zh_CN": "发票与费用明细.费用明细分录id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceandexpense.invoiceentryid",
+                        {
+                            "zh_CN": "发票与费用明细.发票头分录id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceandexpense.invoicenexpensekeyfiled",
+                        {
+                            "zh_CN": "发票与费用明细.关键字段"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.asset_number",
+                        {
+                            "zh_CN": "资产信息.卡片编号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.asset_name",
+                        {
+                            "zh_CN": "资产信息.资产名称"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.asset_billno",
+                        {
+                            "zh_CN": "资产信息.资产编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.asset_cat",
+                        {
+                            "zh_CN": "资产信息.资产类别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.asset_model",
+                        {
+                            "zh_CN": "资产信息.规格型号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.asset_storeplace",
+                        {
+                            "zh_CN": "资产信息.存放地点"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.asset_subjectmatter",
+                        {
+                            "zh_CN": "资产信息.标的物"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.asset_unit",
+                        {
+                            "zh_CN": "资产信息.计量单位"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.asset_quantity",
+                        {
+                            "zh_CN": "资产信息.数量"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assetpricewithouttax",
+                        {
+                            "zh_CN": "资产信息.单价"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.asset_happendate",
+                        {
+                            "zh_CN": "资产信息.资产发生日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assetcurrency",
+                        {
+                            "zh_CN": "资产信息.币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assetexpquotetype",
+                        {
+                            "zh_CN": "资产信息.换算方式"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assetexchangerate",
+                        {
+                            "zh_CN": "资产信息.汇率"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assetexpenseamount",
+                        {
+                            "zh_CN": "资产信息.含税金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assetcurrexpenseamount",
+                        {
+                            "zh_CN": "资产信息.含税金额(本位币)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assettaxrate",
+                        {
+                            "zh_CN": "资产信息.税率（%）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assettaxamount",
+                        {
+                            "zh_CN": "资产信息.税额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assetorientryamount",
+                        {
+                            "zh_CN": "资产信息.金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assetremark",
+                        {
+                            "zh_CN": "资产信息.备注"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assetmobiledeldoneflag",
+                        {
+                            "zh_CN": "资产信息.移动端删除完成标志"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assetsrcbillid",
+                        {
+                            "zh_CN": "资产信息.源单id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assetentryid",
+                        {
+                            "zh_CN": "资产信息.分录id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assetsrcbillno",
+                        {
+                            "zh_CN": "资产信息.源单编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.asset_costdept",
+                        {
+                            "zh_CN": "资产信息.使用部门"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.asset_user",
+                        {
+                            "zh_CN": "资产信息.使用人"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.asset_isspecialinvoice",
+                        {
+                            "zh_CN": "资产信息.专票"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetentry.assetcurentryamount",
+                        {
+                            "zh_CN": "资产信息.金额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetandinvoiceitem.assetdetailid",
+                        {
+                            "zh_CN": "资产与发票明细.资产信息分录id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "assetandinvoiceitem.invoiceitementryid",
+                        {
+                            "zh_CN": "资产与发票明细.发票明细分录id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractcode",
+                        {
+                            "zh_CN": "关联合同.合同号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractname",
+                        {
+                            "zh_CN": "关联合同.合同名称"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.signdate",
+                        {
+                            "zh_CN": "关联合同.签订日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractdescription",
+                        {
+                            "zh_CN": "关联合同.合同说明"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractapplier",
+                        {
+                            "zh_CN": "关联合同.经办人"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractcostorg",
+                        {
+                            "zh_CN": "关联合同.核算组织"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractparta",
+                        {
+                            "zh_CN": "关联合同.甲方"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractpartbtype",
+                        {
+                            "zh_CN": "关联合同.乙方类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractpartb",
+                        {
+                            "zh_CN": "关联合同.乙方"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractexppaytypeid",
+                        {
+                            "zh_CN": "关联合同.付款类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractexphappendate",
+                        {
+                            "zh_CN": "关联合同.预计付款日期"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractexpproject",
+                        {
+                            "zh_CN": "关联合同.项目"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractexpenseitem",
+                        {
+                            "zh_CN": "关联合同.费用项目"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractexpcurrency",
+                        {
+                            "zh_CN": "关联合同.关联合同币别"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractexpchangerate",
+                        {
+                            "zh_CN": "关联合同.汇率"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractexpquotetype",
+                        {
+                            "zh_CN": "关联合同.换算方式"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractcanamount",
+                        {
+                            "zh_CN": "关联合同.可报销金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractcurrcanamount",
+                        {
+                            "zh_CN": "关联合同.可报销金额(本位币)"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractwriteoff",
+                        {
+                            "zh_CN": "关联合同.冲销金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractcurrwriteoff",
+                        {
+                            "zh_CN": "关联合同.冲销金额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractreimamount",
+                        {
+                            "zh_CN": "关联合同.待付金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractcurrreimamhttount",
+                        {
+                            "zh_CN": "关联合同.待付金额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractsid",
+                        {
+                            "zh_CN": "关联合同.源单id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractsrcentryid",
+                        {
+                            "zh_CN": "关联合同.关联合同分录id"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.entryinvoiceamount",
+                        {
+                            "zh_CN": "关联合同.到票金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.entryprepayedamount",
+                        {
+                            "zh_CN": "关联合同.已预付金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.entrycurrprepayedamount",
+                        {
+                            "zh_CN": "关联合同.已预付金额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractnotpayamount",
+                        {
+                            "zh_CN": "关联合同.未付金额（本位币）"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractnonpayamount",
+                        {
+                            "zh_CN": "关联合同.在途金额"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractentry_lk.contractentry_lk_stableid",
+                        {
+                            "zh_CN": "关联合同.关联子实体.源单主实体编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractentry_lk.contractentry_lk_sbillid",
+                        {
+                            "zh_CN": "关联合同.关联子实体.源单内码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "contractentry.contractentry_lk.contractentry_lk_sid",
+                        {
+                            "zh_CN": "关联合同.关联子实体.源单主实体内码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceattachinfo.attachno",
+                        {
+                            "zh_CN": "发票云附件.附件序列号"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceattachinfo.attachname",
+                        {
+                            "zh_CN": "发票云附件.附件名称"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceattachinfo.originalname",
+                        {
+                            "zh_CN": "发票云附件.源文件名称"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceattachinfo.attachtype",
+                        {
+                            "zh_CN": "发票云附件.文件类型"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceattachinfo.gathertime",
+                        {
+                            "zh_CN": "发票云附件.采集时间"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceattachinfo.attachremark",
+                        {
+                            "zh_CN": "发票云附件.备注"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceattachinfo.attachurl",
+                        {
+                            "zh_CN": "发票云附件.附件 url"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceattachinfo.snapshoturl",
+                        {
+                            "zh_CN": "发票云附件.快照 url"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "invoiceattachinfo.rotationangle",
+                        {
+                            "zh_CN": "发票云附件.旋转角度"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "billhead_lk.billhead_lk_stableid",
+                        {
+                            "zh_CN": "关联子实体.源单主实体编码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "billhead_lk.billhead_lk_sbillid",
+                        {
+                            "zh_CN": "关联子实体.源单内码"
+                        },
+                        null,
+                        true
+                    ],
+                    [
+                        "billhead_lk.billhead_lk_sid",
+                        {
+                            "zh_CN": "关联子实体.源单主实体内码"
+                        },
+                        null,
+                        true
+                    ]
+                ],
+                "v": "detailtype",
+                "k": "combofield1"
+            },
+            {
+                "v": "",
+                "k": "combofield2"
+            },
+            {
+                "v": "",
+                "k": "combofield3"
+            },
+            {
+                "v": "",
+                "k": "combofield4"
+            },
+            {
+                "v": "",
+                "k": "combofield5"
+            },
+            {
+                "v": "",
+                "k": "combofield6"
+            },
+            {
+                "v": "",
+                "k": "combofield7"
+            },
+            {
+                "data": {
+                    "pagerows": 20,
+                    "rowcount": 1,
+                    "pagecount": 0,
+                    "datacount": 1,
+                    "phide": true,
+                    "dataindex": {
+                        "cprop": 10,
+                        "expression": 5,
+                        "s": 8,
+                        "vi": 9,
+                        "subject": 6,
+                        "textfield": 4,
+                        "rk": 0,
+                        "pid": 3,
+                        "id": 2,
+                        "l": 7,
+                        "seq": 1
+                    },
+                    "pageindex": 1,
+                    "isSplitPage": false,
+                    "rows": [
+                        [
+                            0,
+                            1,
+                            null,
+                            null,
+                            "",
+                            "model.detailtype",
+                            "对公报销单.关联业务",
+                            {},
+                            {},
+                            {},
+                            {}
+                        ]
+                    ]
+                },
+                "fmtinfo": {
+                    "colfmt": {},
+                    "unitfmt": {},
+                    "currencyfmt": {},
+                    "timezonefmt": {}
+                },
+                "k": "entryentity",
+                "flexMeta": {}
+            }
+        ],
+        "a": "u"
+    },
+    {
+        "p": [
+            {
+                "key": "entryentity",
+                "methodname": "createGridColumns",
+                "args": [
+                    {
+                        "isCellSum": true
+                    }
+                ]
+            },
+            {
+                "key": "entryentity",
+                "methodname": "clearSelRows",
+                "args": []
+            },
+            {
+                "key": "entryentity",
+                "methodname": "selectRows",
+                "args": [
+                    []
+                ]
+            },
+            {
+                "key": "entryentity",
+                "methodname": "setFocus",
+                "args": [
+                    -1
+                ]
+            },
+            {
+                "key": "entryentity",
+                "methodname": "setSelectedDataInfo",
+                "args": [
+                    {
+                        "selectedRowsCount": 0
+                    }
+                ]
+            }
+        ],
+        "a": "InvokeControlMethod"
+    }
+]
