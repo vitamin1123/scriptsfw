@@ -5,6 +5,9 @@ import re
 import oracledb
 from oracle_db_wrapper import OracleDBWrapper
 
+# 全局变量保存单据类型
+GLOBAL_BILL_TYPE = ""
+
 class DataResolver:
     def __init__(self):
         self.user = "JD_CW"
@@ -35,19 +38,48 @@ class DataResolver:
         """获取所有用户ID到名称的映射"""
         query = "select fid, ftruename from cosmic_sys.t_sec_user"
         results = self.db.execute_query(query)
-        return {row[0]: row[1] for row in results} if results else {}
+        
+        user_map = {}
+        for row in results:
+            # 处理嵌套元组情况
+            if isinstance(row, tuple) and len(row) >= 2:
+                if isinstance(row[1], tuple):  # 如果第二列是元组
+                    fid, ftruename = row[1]    # 解包嵌套元组
+                else:
+                    fid, ftruename = row[0], row[1]
+                
+                # 统一转为字符串避免类型问题
+                fid = str(fid)
+                user_map[fid] = ftruename
+        
+        print(f"成功加载 {len(user_map)} 条用户映射")
+        return user_map
     
     def _get_expense_item_mapping(self):
         """获取所有费用项目ID到名称的映射"""
         query = "select fid, fnumber, ffullname from cosmic_sys.t_er_expenseitem"
         results = self.db.execute_query(query)
-        return {row[0]: f"{row[1]}-{row[2]}" for row in results} if results else {}
+        
+        item_map = {}
+        for row in results:
+            if isinstance(row, tuple) and len(row) >= 3:
+                fid = str(row[0])
+                item_map[fid] = f"{row[1]}-{row[2]}"
+        
+        return item_map
     
     def _get_org_mapping(self):
         """获取所有组织ID到名称的映射"""
         query = "select fid, fname from cosmic_sys.t_org_org"
         results = self.db.execute_query(query)
-        return {row[0]: row[1] for row in results} if results else {}
+        
+        org_map = {}
+        for row in results:
+            if isinstance(row, tuple) and len(row) >= 2:
+                fid = str(row[0])
+                org_map[fid] = row[1]
+        
+        return org_map
     
     def _get_role_mapping(self):
         """获取所有角色ID到信息的映射"""
@@ -58,29 +90,38 @@ class DataResolver:
         left join cosmic_sys.t_org_org c on a.forg = c.fid
         """
         results = self.db.execute_query(query)
+        
         role_map = {}
-        if results:
-            for row in results:
-                role_id = row[0]
+        for row in results:
+            if isinstance(row, tuple) and len(row) >= 3:
+                role_id = str(row[0])
+                user_name = row[1] if row[1] else 'N/A'
+                org_name = row[2] if row[2] else 'N/A'
+                
                 if role_id not in role_map:
                     role_map[role_id] = []
-                role_map[role_id].append(f"[{row[1] if row[1] else 'N/A'}, {row[2] if row[2] else 'N/A'}]")
+                role_map[role_id].append(f"[{user_name}, {org_name}]")
+        
         return role_map
     
     def get_user_name(self, user_id):
         """从预加载的字典获取用户名"""
+        user_id = str(user_id)
         return self.user_map.get(user_id, user_id)
         
     def get_expense_item(self, item_id):
         """从预加载的字典获取费用项目"""
+        item_id = str(item_id)
         return self.expense_item_map.get(item_id, item_id)
         
     def get_role_info(self, role_id):
         """从预加载的字典获取角色信息"""
+        role_id = str(role_id)
         return "，".join(self.role_map.get(role_id, ["N/A"]))
         
     def get_org_name(self, org_id):
         """从预加载的字典获取组织名"""
+        org_id = str(org_id)
         return self.org_map.get(org_id, org_id)
         
     def get_expense_items_by_ids(self, item_ids):
@@ -130,6 +171,7 @@ class DataResolver:
         
     def close(self):
         self.db.close()
+
 def get_ori_data():
     file_path = input("请输入XML文件路径：")
     tree = ET.parse(file_path)
@@ -153,15 +195,48 @@ def get_ori_data():
     else:
         print("未找到Resources元素。")
 
-def extract_properties(data):
-    properties = data.get('properties', {})
-    print(f"业务ID: {properties.get('businessId', 'N/A')}")
-    print(f"单据名称: {properties.get('entraBillName', 'N/A')}")
+def convert_param_to_chinese(param):
+    """将paramnumber转换为中文描述"""
+    if not param:
+        return param
     
-    # 提取并显示启动条件
-    startup_cond = properties.get('startupcondrule', {})
-    condition_rule = startup_cond.get('conditionRule', 'N/A')
-    entry_entities = startup_cond.get('entryentity', [])
+    # 去掉model.前缀
+    param = param.replace('model.', '')
+    # 去掉.id或.name后缀
+    if param.endswith('.id') or param.endswith('.name'):
+        param = param[:-3]
+    
+    # 使用全局单据类型
+    global GLOBAL_BILL_TYPE
+    if not GLOBAL_BILL_TYPE:
+        return param
+    
+    # 根据单据类型加载对应的json文件
+    try:
+        with open(f"{GLOBAL_BILL_TYPE}.txt", 'r', encoding='utf-8') as f:
+            field_data = json.load(f)
+            # 获取p数组的第二个元素下的st数组
+            if len(field_data) > 1 and 'p' in field_data[1]:
+                p_array = field_data[1]['p']
+                if len(p_array) > 1 and 'st' in p_array[1]:
+                    st_array = p_array[1]['st']
+                    # 遍历st数组查找匹配字段
+                    for item in st_array:
+                        if isinstance(item, list) and len(item) > 0 and item[0] == param:
+                            if len(item) > 1 and isinstance(item[1], dict) and 'zh_CN' in item[1]:
+                                return item[1]['zh_CN']
+    except:
+        pass
+    
+    return param
+
+def parse_conditional_rule(conditional_rule):
+    """解析条件规则，返回拼接后的表达式"""
+    if not conditional_rule:
+        return "N/A"
+    
+    condition_rule = conditional_rule.get('conditionRule', 'N/A')
+    entry_entities = conditional_rule.get('entryentity', [])
     
     # 拼接entryentity表达式
     if entry_entities:
@@ -173,7 +248,38 @@ def extract_properties(data):
                 expr_parts.append(entry['leftbracket'])
             
             # 添加子表达式
-            expr_parts.append(f"{entry.get('paramnumber', '')} {entry.get('operation', '')} {entry.get('value', '')}")
+            value = entry.get('value', '')
+            paramnumber = entry.get('paramnumber', '')
+            
+            # 处理paramnumber转换为中文
+            paramnumber = convert_param_to_chinese(paramnumber)
+            
+            # 处理value中的JSON数组
+            try:
+                if value.startswith('[') and value.endswith(']'):
+                    items = json.loads(value)
+                    if isinstance(items, list):
+                        resolved_values = []
+                        for item in items:
+                            if isinstance(item, dict):
+                                number = item.get('number', '')
+                                alias = item.get('alias', '')
+                                resolved_values.append(f"[{number}{alias}]")
+                        value = '、'.join(resolved_values)
+            except json.JSONDecodeError:
+                pass
+            
+            # 处理运算符
+            operation = entry.get('operation', '')
+            operation_map = {
+                '!=': '不等于',
+                '==': '等于',
+                'IN': '在',
+                'NI': '不在'
+            }
+            operation = operation_map.get(operation, operation)
+            
+            expr_parts.append(f"{paramnumber} {operation} {value}")
             
             # 处理右括号
             if 'rightbracket' in entry:
@@ -181,17 +287,33 @@ def extract_properties(data):
             
             # 添加逻辑运算符(第一个元素不需要)
             if expr_parts and 'logic' in entry:
-                expr_parts.append(f" {entry['logic']} ")
+                logic_map = {
+                    '&&': '且',
+                    '||': '或'
+                }
+                logic = logic_map.get(entry['logic'], entry['logic'])
+                expr_parts.append(f" {logic} ")
         
         built_expr = ''.join(expr_parts)
-        print(f"原始conditionRule: \n {condition_rule}")
-        print(f"拼接后的表达式: \n {built_expr}")
+        return built_expr
+    else:
+        return condition_rule
+
+def extract_properties(data):
+    global GLOBAL_BILL_TYPE
+    properties = data.get('properties', {})
+    print(f"业务ID: {properties.get('businessId', 'N/A')}")
+    print(f"单据名称: {properties.get('entraBillName', 'N/A')}")
     
-    if condition_rule != 'N/A':
-        # 调用parse_condition_expression处理条件表达式
-        bill_type = properties.get('entraBill', '').replace('er_', '')
-        condition_rule = parse_condition_expression(condition_rule, bill_type)
-        print(f"解析后的启动条件: \n {condition_rule}")
+    # 获取并保存单据类型
+    GLOBAL_BILL_TYPE = properties.get('entraBill', '').replace('er_', '')
+    print(f"单据类型: {GLOBAL_BILL_TYPE}")
+    
+    # 提取并显示启动条件
+    startup_cond = properties.get('startupcondrule', {})
+    built_expr = parse_conditional_rule(startup_cond)
+    
+    print(f"启动条件表达式: \n{built_expr}")
 
 def build_dag(data):
     nodes = data.get('childShapes', [])
@@ -222,14 +344,37 @@ def find_all_paths(graph, node_info, path, current_node, all_paths):
     
     path.pop()
 
-def parse_condition_expression(expr, bill_type):
-    """处理条件表达式，转换为中文描述
-    Args:
-        expr: 原始表达式字符串，如${model.detailtype != "biztype_contract" && ...}
-        bill_type: 单据类型，从properties-entraBill获取
-    Returns:
-        转换后的中文表达式
-    """
+def parse_participants(participants, resolver):
+    """解析participants数组中的条件规则"""
+    if not participants or not isinstance(participants, list):
+        return []
+    
+    results = []
+    for participant in participants:
+        if not isinstance(participant, dict):
+            continue
+        participant_name = participant.get('value', '未知参与者')
+        participant_type = participant.get('type')
+
+        # print('participant_type',participant_type,participant_name)
+        if participant_type == 'person' and hasattr(resolver, 'get_user_name'):
+            participant_name = resolver.get_user_name(participant_name)
+            # print('participant_name233',participant_name)
+        # # 检查是否有嵌套participant
+        # nested_participants = participant.get('participant', [])
+        # if nested_participants:
+        #     results.extend(parse_participants(nested_participants))
+        
+        # 检查当前participant是否有condrule
+        condrule = participant.get('condrule')
+        if condrule:
+            built_expr = parse_conditional_rule(condrule)
+            results.append(f"参与者[{participant_name}]的条件: {built_expr}")
+    
+    return results
+
+def parse_condition_expression(expr):
+    """处理条件表达式，转换为中文描述"""
     original_expr = expr  # 保存原始表达式
     
     # 1. 去除${}包装
@@ -258,11 +403,14 @@ def parse_condition_expression(expr, bill_type):
         # 去掉.id或.name后缀
         if field.endswith('.id') or field.endswith('.name'):
             field = field[:-3]
-        # print('bill_type: ',bill_type)
+        # 使用全局单据类型
+        global GLOBAL_BILL_TYPE
+        if not GLOBAL_BILL_TYPE:
+            return field
+        
         # 根据单据类型加载对应的json文件
         try:
-            with open(f"{bill_type}.txt", 'r', encoding='utf-8') as f:
-                # print('找到文件了')
+            with open(f"{GLOBAL_BILL_TYPE}.txt", 'r', encoding='utf-8') as f:
                 field_data = json.load(f)
                 # 获取p数组的第二个元素下的st数组
                 if len(field_data) > 1 and 'p' in field_data[1]:
@@ -273,7 +421,6 @@ def parse_condition_expression(expr, bill_type):
                         for item in st_array:
                             if isinstance(item, list) and len(item) > 0 and item[0] == field:
                                 if len(item) > 1 and isinstance(item[1], dict) and 'zh_CN' in item[1]:
-                                    # print('fuck: ',item)
                                     return item[1]['zh_CN']
                 return field
         except:
@@ -282,7 +429,7 @@ def parse_condition_expression(expr, bill_type):
     # 匹配所有model.开头的字段引用
     expr = re.sub(r'(model\.[\w\.]+)(?:\.id|\.name)?', replace_field, expr)
     
-        # 处理组织ID替换
+    # 处理组织ID替换
     org_keywords = ['公司', '组织', '部门']
     for keyword in org_keywords:
         pattern = re.compile(fr'({keyword}s*==s*)("[\d,]+"|\d+)')
@@ -310,7 +457,6 @@ def parse_condition_expression(expr, bill_type):
             if ',' in id_str:
                 ids = [id_.strip() for id_ in id_str.split(',')]
                 names = [resolver.get_org_name(id_) for id_ in ids]
-                print('names: ',names)
                 return f"{prefix}" + '"' + '、'.join(names) + '"'
             else:  # 处理单个ID
                 return f"{prefix}" + '"' + resolver.get_org_name(id_str) + '"'
@@ -324,6 +470,7 @@ def print_paths(graph, node_info):
     start_nodes = [node for node in node_info if all(node not in targets for targets in graph.values())]
     all_paths = []
     
+    resolver = DataResolver()
     for start in start_nodes:
         find_all_paths(graph, node_info, [], start, all_paths)
     
@@ -335,10 +482,28 @@ def print_paths(graph, node_info):
             name = node_data.get('properties', {}).get('name', '未命名')
             number = node_data.get('properties', {}).get('number', 'N/A')
             stencil_id = node_data.get('stencil', {}).get('id', 'N/A')
-            print(f"  - {name} ({stencil_id}) ")
-            # print(f"  - {name} (编号: {number}, 节点类型: {stencil_id})")
+            
+            # 打印节点基本信息
+            print(f"  - {name} ({stencil_id})")
+            
+            # 检查并处理conditionalRule
+            conditional_rule = node_data.get('properties', {}).get('conditionalRule')
+            if conditional_rule:
+                built_expr = parse_conditional_rule(conditional_rule)
+                print(f"    条件规则: {built_expr}")
+            
+            # 检查并处理participant中的condrule
+            participant = node_data.get('properties', {}).get('participant')
+            if participant and isinstance(participant, dict):
+                # 获取嵌套的participant数组
+                nested_participants = participant.get('participant')
+                if nested_participants:
+                    
+                    participant_exprs = parse_participants(nested_participants, resolver)
+                    for expr in participant_exprs:
+                        print(f"    {expr}")
         print()
-
+    resolver.close()
 if __name__ == '__main__':
     resolver = DataResolver()
     try:
@@ -350,5 +515,3 @@ if __name__ == '__main__':
             print_paths(graph, node_info)
     finally:
         resolver.close()
-
-        
