@@ -356,9 +356,18 @@ def parse_participants(participants, resolver):
         participant_name = participant.get('value', '未知参与者')
         participant_type = participant.get('type')
 
-        # print('participant_type',participant_type,participant_name)
-        if participant_type == 'person' and hasattr(resolver, 'get_user_name'):
-            participant_name = resolver.get_user_name(participant_name)
+        print('participant_type', participant_type, participant_name)
+        if participant_type == 'person' :
+            # Handle comma-separated user IDs
+            if ',' in participant_name:
+                user_ids = [id_.strip() for id_ in participant_name.split(',')]
+                resolved_names = []
+
+                for user_id in user_ids:
+                    resolved_names.append(resolver.get_user_name(user_id))
+                participant_name = '、'.join(resolved_names)
+            else:
+                participant_name = resolver.get_user_name(participant_name)
             # print('participant_name233',participant_name)
         # # 检查是否有嵌套participant
         # nested_participants = participant.get('participant', [])
